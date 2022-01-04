@@ -3,7 +3,9 @@
     <div :key="i" v-for="(cocktailPage, i) in cocktailPages">
       <h3 :id="pageName(cocktailPage)">
         <a :href="cocktailPage.path">
-          {{ cocktailPage.title }}
+          <span>
+            {{ cocktailPage.title }}
+          </span>
           <img
             :src="$withBase(imagePath(cocktailPage))"
             :alt="pageName(cocktailPage)"

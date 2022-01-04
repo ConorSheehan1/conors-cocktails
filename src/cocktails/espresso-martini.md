@@ -1,6 +1,5 @@
 ---
 title: Espresso Martini
-description: Espresso Martini
 
 date: 2022-01-04
 
