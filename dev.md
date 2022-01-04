@@ -10,3 +10,13 @@ $ yarn dev
 # build for production
 $ yarn build
 ```
+
+### Linting
+
+```bash
+# check for linting errors
+$ yarn lint
+
+# autofix linting errors
+$ yarn lintfix
+```

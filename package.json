@@ -10,10 +10,14 @@
   "repository": "https://github.com/ConorSheehan1/conors-cocktails/conors-cocktails",
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "build": "vuepress build src",
+    "lint:prettier": "prettier --check .",
+    "lint": "yarn lint:prettier",
+    "lintfix": "prettier --write --list-different ."
   },
   "license": "MIT",
   "devDependencies": {
+    "prettier": "^2.5.1",
     "vuepress": "^1.5.3"
   }
 }
