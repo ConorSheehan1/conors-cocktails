@@ -42,18 +42,7 @@ module.exports = {
         link: repository,
       }
     ],
-    sidebar: {
-      '/cocktails/': [
-        {
-          title: 'Cocktails',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
+    sidebar: 'auto',
   },
 
   /**
