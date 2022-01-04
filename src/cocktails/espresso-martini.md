@@ -31,7 +31,7 @@ difficulty: medium
 
 ## Ingredients
 
-<ingredients/>
+<cocktail-ingredients/>
 
 ## Equipment
 

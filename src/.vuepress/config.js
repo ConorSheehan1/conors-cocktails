@@ -41,6 +41,10 @@ module.exports = {
         link: "/cocktails/",
       },
       {
+        text: "Ingredients",
+        link: "/ingredients/",
+      },
+      {
         text: "Github",
         link: repository,
       },

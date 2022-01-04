@@ -7,7 +7,15 @@
     </select>
     <ul>
       <li :key="i" v-for="(ingredient, i) in formattedIngredients">
-        {{ ingredient.amount }} {{ ingredient.unit }} {{ ingredient.name }}
+        <span>
+          {{ ingredient.amount }} {{ ingredient.unit }}
+        </span>
+        <span v-if="hasIngredientLink(ingredient)">
+          <a :href="ingredientLink(ingredient)">{{ ingredient.name }}</a>
+        </span>
+        <span v-else>
+          {{ ingredient.name }}
+        </span>
       </li>
     </ul>
   </div>
@@ -23,8 +31,13 @@ export default {
     };
   },
   computed: {
+    // ingredients for this cocktail
     ingredients() {
       return this.$page.frontmatter.ingredients;
+    },
+    allIngredients() {
+    // ingredients listed on the ingredients page
+      return this.$site.pages.find(v => v.title === 'Ingredients').frontmatter.allIngredients;
     },
     formattedIngredients() {
       return this.ingredients.map(this[`${this.selectedFormat}Format`]);
@@ -38,6 +51,12 @@ export default {
     },
   },
   methods: {
+    ingredientLink({ name }) {
+      return `/ingredients#${name.replace(' ', '-')}`;
+    },
+    hasIngredientLink({ name }) {
+      return this.allIngredients.includes(name);
+    },
     isPartsIngredient({ unit }) {
       return unit.toLowerCase().includes("part");
     },
