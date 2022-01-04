@@ -1,10 +1,10 @@
-const { description } = require('../../package')
+const { description, repository } = require('../../package')
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: "Conor's Cocktails",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -34,22 +34,18 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'Cocktails',
+        link: '/cocktails/',
       },
       {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'Github',
+        link: repository,
       }
     ],
     sidebar: {
-      '/guide/': [
+      '/cocktails/': [
         {
-          title: 'Guide',
+          title: 'Cocktails',
           collapsable: false,
           children: [
             '',
