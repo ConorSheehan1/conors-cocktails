@@ -42,7 +42,7 @@ module.exports = {
         link: repository,
       }
     ],
-    sidebar: 'auto',
+    sidebar: 'auto',  
   },
 
   /**

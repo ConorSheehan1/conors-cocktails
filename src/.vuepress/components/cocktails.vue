@@ -9,6 +9,7 @@
 </template>
 
 <script>
+  // TODO: make searchable cocktail table
   export default {
     computed: {
       cocktailPages() {
@@ -17,7 +18,6 @@
     },
     methods: {
       pageName(page) {
-        debugger
         return page.path.match('\/cocktails\/(.+)\.html')[1];
       }
     }

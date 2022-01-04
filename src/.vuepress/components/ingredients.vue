@@ -12,6 +12,7 @@
 </template>
 
 <script>
+  // requires ingredients in frontmatter
   export default {
     data() {
       return {
@@ -19,12 +20,10 @@
         selectedFormat: 'parts',
       }
     },
-    props: {
-      ingredients: {
-        type: Array,
-      },
-    },
     computed: {
+      ingredients() {
+        return this.$page.frontmatter.ingredients;
+      },
       formattedIngredients() {
         return this.ingredients.map(this[`${this.selectedFormat}Format`]);
       },

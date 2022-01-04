@@ -1,31 +1,35 @@
+---
+title: Espresso Martini
+description: Espresso Martini
+
+date: 2022-01-04
+
+ingredients:
+  - name: coffee
+    amount: 1
+    unit: cup
+  - name: kahlua
+    amount: 2
+    unit: parts
+  - name: vanilla vodka
+    amount: 1
+    unit: part
+  - name: maple syrup
+    amount: dash
+    unit: to taste
+
+flavours:
+  - coffee
+  - vanilla
+
+difficulty: medium
+time_to_prepare: 15 minutes
+---
+
 # Espresso Martini
 
 ## Ingredients
-<ingredients
-  :ingredients="[
-    { 
-      name: 'coffee',
-      amount: '1',
-      unit: 'cup',
-    },
-    {
-      name: 'kahlua',
-      amount: '2',
-      unit: 'parts',
-    },
-    {
-      name: 'vanilla vodka',
-      amount: '1',
-      unit: 'part',
-    },
-    {
-      name: 'maple syrup',
-      amount: 'dash',
-      unit: 'to taste',
-    },
-  ]"
-/>
-
+<ingredients/>
 
 ## Equipment
 * cocktail shaker
