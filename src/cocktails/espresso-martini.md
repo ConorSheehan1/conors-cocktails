@@ -23,10 +23,10 @@ flavours:
   - vanilla
 
 difficulty: medium
-time_to_prepare: 15 minutes
 ---
 
 # Espresso Martini
+![Espresso Martini](/images/espresso-martini/espresso-martini.jpg)
 
 ## Ingredients
 <ingredients/>

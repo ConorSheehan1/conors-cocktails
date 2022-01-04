@@ -1,10 +1,13 @@
 <template>
 <div>
-  <h3 :id="pageName(cocktailPage)" :key="i" v-for="cocktailPage, i in cocktailPages">
-    <a :href="cocktailPage.path">
-      {{ cocktailPage.title }}
-    </a>
-  </h3>
+  <div :key="i" v-for="cocktailPage, i in cocktailPages">
+    <h3 :id="pageName(cocktailPage)" >
+      <a :href="cocktailPage.path">
+        {{ cocktailPage.title }}
+        <img :src="$withBase(imagePath(cocktailPage))" :alt="pageName(cocktailPage)">
+      </a>
+    </h3>
+  </div>
 </div>
 </template>
 
@@ -19,6 +22,10 @@
     methods: {
       pageName(page) {
         return page.path.match('\/cocktails\/(.+)\.html')[1];
+      },
+      imagePath(page) {
+        const name = this.pageName(page);
+        return `/images/${name}/${name}.jpg`;
       }
     }
   }
