@@ -8,6 +8,7 @@
     responsive
     striped
     hover
+    @row-clicked="onRowClicked"
   >
     <template #cell(image)="data">
       <img
@@ -65,11 +66,15 @@ export default {
             imagePath,
             pageName,
           },
+          path: page.path,
         }
       });
     },
   },
   methods: {
+    onRowClicked(record, index) {
+      this.$router.push(record.path)
+    },
     pageName(page) {
       return page.path.match("\/cocktails\/(.+)\.html")[1];
     },
