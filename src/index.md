@@ -1,6 +1,5 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
 tagline:
 actionText: Cocktails →
 actionLink: /cocktails/
@@ -16,4 +15,5 @@ actionLink: /cocktails/
 # https://github.com/vuejs/vuepress/issues/859
 # footer: Built with [vuepress](https://vuepress.vuejs.org/)
 ---
+<cocktails-carousel/>
 <vuepress-footer/>

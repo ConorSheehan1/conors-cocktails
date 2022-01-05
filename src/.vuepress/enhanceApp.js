@@ -19,4 +19,25 @@ export default ({
   Vue.use(BootstrapVue)
   // Optionally install the BootstrapVue icon components plugin
   Vue.use(IconsPlugin)
+
+  // global mixin, used in cocktails-carousel and cocktails
+  // TODO: move to composition api / specific import mixin
+  Vue.mixin({
+    computed: {
+      cocktailPages() {
+        return this.$site.pages.filter((page) =>
+          page.path.match("\/cocktails\/.+")
+        );
+      },
+    },
+    methods: {
+      pageName(page) {
+        return page.path.match("\/cocktails\/(.+)\.html")[1];
+      },
+      imagePath(page) {
+        const name = this.pageName(page);
+        return `/images/${name}/${name}.jpg`;
+      },
+    }
+  })
 }

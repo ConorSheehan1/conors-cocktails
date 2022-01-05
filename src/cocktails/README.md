@@ -4,4 +4,4 @@ sidebar: false
 
 # Cocktails :cocktail:
 
-<cocktails />
+<cocktails-table />

@@ -5,7 +5,7 @@
     :sort-by.sync="sortBy"
     :sort-desc.sync="sortDesc"
     sort-icon-left
-    responsive
+    responsive="lg"
     striped
     hover
     @row-clicked="onRowClicked"
@@ -26,7 +26,10 @@ export default {
       sortBy: 'title',
       sortDesc: false,
       tableFields: [
-        'image',
+        {
+          key: 'image',
+          label: '',
+        },
         {
           key: 'title',
           sortable: true,
@@ -89,4 +92,8 @@ export default {
 <style lang="stylus" scoped>
 img
   margin auto
+
+::v-deep table
+  border-radius 8px !important
+
 </style>
