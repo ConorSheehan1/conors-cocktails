@@ -1,40 +1,31 @@
 <template>
-  <div>
-    <b-table
-      :items="cocktailPages.map(v => v.frontmatter)"
-      :fields="tableFields"
-      :sort-by.sync="sortBy"
-      :sort-desc.sync="sortDesc"
-      sort-icon-left
-      responsive
-      striped
-      hover
-    >
-    </b-table>
-    <div :key="i" v-for="(cocktailPage, i) in cocktailPages">
-      <h3 :id="pageName(cocktailPage)">
-        <a :href="cocktailPage.path">
-          <span>
-            {{ cocktailPage.title }}
-          </span>
-          <img
-            :src="$withBase(imagePath(cocktailPage))"
-            :alt="pageName(cocktailPage)"
-          />
-        </a>
-      </h3>
-    </div>
-  </div>
+  <b-table
+    :items="tableData"
+    :fields="tableFields"
+    :sort-by.sync="sortBy"
+    :sort-desc.sync="sortDesc"
+    sort-icon-left
+    responsive
+    striped
+    hover
+  >
+    <template #cell(image)="data">
+      <img
+        :src="$withBase(data.value.imagePath)"
+        :alt="data.value.imageName"
+      />
+    </template>
+  </b-table>
 </template>
 
 <script>
-// TODO: make searchable cocktail table
 export default {
   data() {
     return {
       sortBy: 'title',
       sortDesc: false,
       tableFields: [
+        'image',
         {
           key: 'title',
           sortable: true,
@@ -64,15 +55,19 @@ export default {
         page.path.match("\/cocktails\/.+")
       );
     },
-    // tableData() {
-    //   return this.cocktailPages.map(page => {
-    //     const {  }
-    //     return {
-    //       ...page.frontmatter,
-
-    //     }
-    //   });
-    // },
+    tableData() {
+      return this.cocktailPages.map(page => {
+        const imagePath = this.imagePath(page)
+        const pageName = this.pageName(page)
+        return {
+          ...page.frontmatter,
+          image: {
+            imagePath,
+            pageName,
+          },
+        }
+      });
+    },
   },
   methods: {
     pageName(page) {
@@ -85,3 +80,8 @@ export default {
   },
 };
 </script>
+
+<style lang="stylus" scoped>
+img
+  margin auto
+</style>
