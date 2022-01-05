@@ -4,7 +4,7 @@ allIngredients:
   - kahlua
   - vanilla vodka
 ---
-# Ingredients
+# Ingredients :page_with_curl:
 
 These are not strict requirements, just the ingredients I use when making cocktails.
 

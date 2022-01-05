@@ -6,7 +6,7 @@
       :sort-by.sync="sortBy"
       :sort-desc.sync="sortDesc"
       sort-icon-left
-      responsive="sm"
+      responsive
       striped
       hover
     >
@@ -45,9 +45,15 @@ export default {
         },
         {
           key: 'ingredients',
+          formatter(ingredients) {
+            return ingredients.map(v => v.name).join(', ')
+          },
         },
         {
           key: 'flavours',
+          formatter(flavours) {
+            return flavours.join(', ')
+          },
         },
       ]
     }

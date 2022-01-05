@@ -35,9 +35,10 @@ export default {
     ingredients() {
       return this.$page.frontmatter.ingredients;
     },
+    // TODO: test for this, broke when added emoji to title
     allIngredients() {
-    // ingredients listed on the ingredients page
-      return this.$site.pages.find(v => v.title === 'Ingredients').frontmatter.allIngredients;
+      // ingredients listed on the ingredients page
+      return this.$site.pages.find(v => v.path === '/ingredients/').frontmatter.allIngredients;
     },
     formattedIngredients() {
       return this.ingredients.map(this[`${this.selectedFormat}Format`]);

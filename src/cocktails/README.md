@@ -2,6 +2,6 @@
 sidebar: false
 ---
 
-# Cocktails
+# Cocktails :cocktail:
 
 <cocktails />
