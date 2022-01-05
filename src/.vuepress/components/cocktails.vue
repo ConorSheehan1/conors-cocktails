@@ -35,10 +35,20 @@ export default {
       sortBy: 'title',
       sortDesc: false,
       tableFields: [
-        'title',
-        'ingredients',
-        'flavours',
-        'difficulty'
+        {
+          key: 'title',
+          sortable: true,
+        },
+        {
+          key: 'difficulty',
+          sortable: true,
+        },
+        {
+          key: 'ingredients',
+        },
+        {
+          key: 'flavours',
+        },
       ]
     }
   },
