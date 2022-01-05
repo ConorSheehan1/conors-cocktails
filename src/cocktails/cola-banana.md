@@ -26,12 +26,12 @@ difficulty: easy
 
 <cocktail-ingredients/>
 
-
 ## Recipe
 
 1. Mix banana liquer with cola.
 2. Add some ice.
 
 ### Notes
+
 - That's really it. Can't go wrong, tweak to your taste!
 - No relation to coco cabana.

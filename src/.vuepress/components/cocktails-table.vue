@@ -11,10 +11,7 @@
     @row-clicked="onRowClicked"
   >
     <template #cell(image)="data">
-      <img
-        :src="$withBase(data.value.imagePath)"
-        :alt="data.value.imageName"
-      />
+      <img :src="$withBase(data.value.imagePath)" :alt="data.value.imageName" />
     </template>
   </b-table>
 </template>
@@ -23,46 +20,41 @@
 export default {
   data() {
     return {
-      sortBy: 'title',
+      sortBy: "title",
       sortDesc: false,
       tableFields: [
         {
-          key: 'image',
-          label: '',
+          key: "image",
+          label: "",
         },
         {
-          key: 'title',
+          key: "title",
           sortable: true,
         },
         {
-          key: 'difficulty',
+          key: "difficulty",
           sortable: true,
         },
         {
-          key: 'ingredients',
+          key: "ingredients",
           formatter(ingredients) {
-            return ingredients.map(v => v.name).join(', ')
+            return ingredients.map((v) => v.name).join(", ");
           },
         },
         {
-          key: 'flavours',
+          key: "flavours",
           formatter(flavours) {
-            return flavours.join(', ')
+            return flavours.join(", ");
           },
         },
-      ]
-    }
+      ],
+    };
   },
   computed: {
-    cocktailPages() {
-      return this.$site.pages.filter((page) =>
-        page.path.match("\/cocktails\/.+")
-      );
-    },
     tableData() {
-      return this.cocktailPages.map(page => {
-        const imagePath = this.imagePath(page)
-        const pageName = this.pageName(page)
+      return this.cocktailPages.map((page) => {
+        const imagePath = this.imagePath(page);
+        const pageName = this.pageName(page);
         return {
           ...page.frontmatter,
           image: {
@@ -70,20 +62,13 @@ export default {
             pageName,
           },
           path: page.path,
-        }
+        };
       });
     },
   },
   methods: {
     onRowClicked(record, index) {
-      this.$router.push(record.path)
-    },
-    pageName(page) {
-      return page.path.match("\/cocktails\/(.+)\.html")[1];
-    },
-    imagePath(page) {
-      const name = this.pageName(page);
-      return `/images/${name}/${name}.jpg`;
+      this.$router.push(record.path);
     },
   },
 };
@@ -95,5 +80,4 @@ img
 
 ::v-deep table
   border-radius 8px !important
-
 </style>

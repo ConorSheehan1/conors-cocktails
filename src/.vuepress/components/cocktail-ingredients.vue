@@ -7,9 +7,7 @@
     </select>
     <ul>
       <li :key="i" v-for="(ingredient, i) in formattedIngredients">
-        <span>
-          {{ ingredient.amount }} {{ ingredient.unit }}
-        </span>
+        <span> {{ ingredient.amount }} {{ ingredient.unit }} </span>
         <span v-if="hasIngredientLink(ingredient)">
           <a :href="ingredientLink(ingredient)">{{ ingredient.name }}</a>
         </span>
@@ -38,7 +36,8 @@ export default {
     // TODO: test for this, broke when added emoji to title
     allIngredients() {
       // ingredients listed on the ingredients page
-      return this.$site.pages.find(v => v.path === '/ingredients/').frontmatter.allIngredients;
+      return this.$site.pages.find((v) => v.path === "/ingredients/")
+        .frontmatter.allIngredients;
     },
     formattedIngredients() {
       return this.ingredients.map(this[`${this.selectedFormat}Format`]);
@@ -53,7 +52,7 @@ export default {
   },
   methods: {
     ingredientLink({ name }) {
-      return `/ingredients#${name.replace(' ', '-')}`;
+      return `/ingredients#${name.replace(" ", "-")}`;
     },
     hasIngredientLink({ name }) {
       return this.allIngredients.includes(name);
