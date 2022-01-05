@@ -1,5 +1,6 @@
 <template>
   <b-table
+    id="cocktail-table"
     :items="tableData"
     :fields="tableFields"
     :sort-by.sync="sortBy"
@@ -17,6 +18,9 @@
 </template>
 
 <script>
+// TODO: fix mobile table
+// vue-component-media-queries?
+// completely different layout for mobile, split across 2+ rows and show iamges
 export default {
   data() {
     return {
@@ -75,6 +79,9 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+// #cocktail-table
+//   width: 80%
+
 img
   margin auto
 

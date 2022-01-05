@@ -37,7 +37,7 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: "Cocktails",
+        text: "Recipes",
         link: "/cocktails/",
       },
       {

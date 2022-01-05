@@ -1,7 +1,7 @@
 ---
 home: true
 tagline:
-actionText: Cocktails →
+actionText: Recipes →
 actionLink: /cocktails/
 # TODO: add gallery at homepage
 # features:
