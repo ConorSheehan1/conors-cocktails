@@ -29,6 +29,9 @@ module.exports = {
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
+  // TODO: remove once upgraded to vuepress2
+  // https://github.com/vuepress/vuepress-next/discussions/68
+  theme: 'vuepress-theme-default-prefers-color-scheme',
   themeConfig: {
     repo: "",
     editLinks: false,
@@ -55,5 +58,5 @@ module.exports = {
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
+  plugins: ["@vuepress/plugin-back-to-top"],
 };

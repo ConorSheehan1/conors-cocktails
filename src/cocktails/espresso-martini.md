@@ -40,11 +40,13 @@ difficulty: medium
 ## Recipe
 
 1. Make a cup of coffee and allow to cool.
-2. Add the coffee, kahlua, vanilla vodka, and mapel syrup to the cocktail shaker.
+2. Add the coffee, kahlua, vanilla vodka, and maple syrup to the cocktail shaker.
 3. Shake!
+4. Serve chilled.
 
 ### Notes
 
 - A coffee with lots of crema is best to get a frothy top. Regular instant coffee works ok though. The maple syrup will help with the froth. Adding a few teaspoons of sugar to the coffee while brewing can help too.
 - Once the coffee has brewed, add some ice cubes to speed up the cooling.
-- Espresso martinis are often served with coffee bean garnishes, but I much prefer adding some chocolate powder the top!
+- You can add ice to the shaker as well, but make sure you strain them out so you get all the foam.
+- Espresso martinis are often served with coffee bean garnishes, but I prefer coco powder on top!

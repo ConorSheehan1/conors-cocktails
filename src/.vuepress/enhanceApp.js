@@ -18,12 +18,30 @@ export default ({ Vue, options, router, siteData }) => {
   // global mixin, used in cocktails-carousel and cocktails
   // TODO: move to composition api / specific import mixin
   Vue.mixin({
+    data() {
+      return {
+        isDarkMode: false,
+      }
+    },
+    created() {
+      const mql = window.matchMedia("(prefers-color-scheme: dark)");
+      mql.addEventListener("change", () => {
+        if (window.matchMedia("(prefers-color-scheme: dark)")?.matches) {
+          this.isDarkMode = true;
+        } else {
+          this.isDarkMode = false;
+        }
+      });
+    },
     computed: {
       cocktailPages() {
         return this.$site.pages.filter((page) =>
           page.path.match("/cocktails/.+")
         );
       },
+      // isDarkMode() {
+      //   return window.matchMedia('(prefers-color-scheme: dark)')
+      // },
     },
     methods: {
       pageName(page) {

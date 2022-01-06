@@ -5,6 +5,7 @@
     :fields="tableFields"
     :sort-by.sync="sortBy"
     :sort-desc.sync="sortDesc"
+    :dark="isDarkMode"
     sort-icon-left
     responsive="lg"
     striped
@@ -56,6 +57,7 @@ export default {
   },
   computed: {
     tableData() {
+      debugger
       return this.cocktailPages.map((page) => {
         const imagePath = this.imagePath(page);
         const pageName = this.pageName(page);
