@@ -20,6 +20,7 @@
 </template>
 
 <script>
+// TODO: switch from select to b-button-group? show all options in advance
 // requires ingredients in frontmatter
 export default {
   data() {
@@ -88,3 +89,8 @@ export default {
   },
 };
 </script>
+
+<style lang="stylus" scoped>
+select
+  margin 1em
+</style>
