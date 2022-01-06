@@ -25,6 +25,7 @@ export default ({ Vue, options, router, siteData }) => {
     },
     mounted() {
       const mql = window.matchMedia("(prefers-color-scheme: dark)");
+      this.isDarkMode = mql?.matches === true;
       mql.addEventListener("change", () => {
         if (window.matchMedia("(prefers-color-scheme: dark)")?.matches) {
           this.isDarkMode = true;
