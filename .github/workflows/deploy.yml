@@ -10,10 +10,23 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: "Deploy to Netlify"
+    name: "Deploy"
     steps:
-      - uses: jsmrcaga/action-netlify-deploy@v1.1.0
+      - uses: actions/checkout@v2
+      - name: "Install node"
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: "Install dependencies"
+        run: |
+          npm install -g yarn
+          yarn install
+      - name: "Build"
+        run: yarn build
+      - name: "Deploy to Netlify"
+        uses: jsmrcaga/action-netlify-deploy@v1.1.0
         with:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_DEPLOY_MESSAGE: "Prod deploy v${{ github.ref }}"
           NETLIFY_DEPLOY_TO_PROD: true
