@@ -21,7 +21,7 @@ export default ({ Vue, options, router, siteData }) => {
     data() {
       return {
         isDarkMode: false,
-      }
+      };
     },
     created() {
       const mql = window.matchMedia("(prefers-color-scheme: dark)");
@@ -39,9 +39,6 @@ export default ({ Vue, options, router, siteData }) => {
           page.path.match("/cocktails/.+")
         );
       },
-      // isDarkMode() {
-      //   return window.matchMedia('(prefers-color-scheme: dark)')
-      // },
     },
     methods: {
       pageName(page) {

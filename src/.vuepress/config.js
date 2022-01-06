@@ -31,7 +31,7 @@ module.exports = {
    */
   // TODO: remove once upgraded to vuepress2
   // https://github.com/vuepress/vuepress-next/discussions/68
-  theme: 'vuepress-theme-default-prefers-color-scheme',
+  theme: "vuepress-theme-default-prefers-color-scheme",
   themeConfig: {
     repo: "",
     editLinks: false,

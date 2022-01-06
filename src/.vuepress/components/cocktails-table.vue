@@ -57,7 +57,6 @@ export default {
   },
   computed: {
     tableData() {
-      debugger
       return this.cocktailPages.map((page) => {
         const imagePath = this.imagePath(page);
         const pageName = this.pageName(page);
