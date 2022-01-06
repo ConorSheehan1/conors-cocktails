@@ -13,14 +13,6 @@ jobs:
     name: "Deploy"
     steps:
       - uses: actions/checkout@v2
-      - name: "Install node"
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - name: "Install dependencies"
-        run: |
-          npm install -g yarn
-          yarn install
       - name: "Deploy to Netlify"
         uses: jsmrcaga/action-netlify-deploy@v1.1.0
         with:
@@ -31,3 +23,4 @@ jobs:
           install_command: yarn install
           build_command: yarn build
           build_directory: src/.vuepress/dist
+          node_version: 14.18.2
