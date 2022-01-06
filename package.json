@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "authors": {
-    "name": "",
-    "email": ""
+    "name": "Conor Sheehan",
+    "email": "conor.sheehan.dev@gmail.com"
   },
   "repository": "https://github.com/ConorSheehan1/conors-cocktails",
   "scripts": {

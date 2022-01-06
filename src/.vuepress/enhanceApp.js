@@ -23,7 +23,7 @@ export default ({ Vue, options, router, siteData }) => {
         isDarkMode: false,
       };
     },
-    created() {
+    mounted() {
       const mql = window.matchMedia("(prefers-color-scheme: dark)");
       mql.addEventListener("change", () => {
         if (window.matchMedia("(prefers-color-scheme: dark)")?.matches) {
