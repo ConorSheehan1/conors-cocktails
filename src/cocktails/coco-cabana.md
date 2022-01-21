@@ -22,7 +22,6 @@ ingredients:
   - name: grenadine
     amount: 1
     unit: dash
-  
 
 flavours:
   - fruity

@@ -42,9 +42,9 @@ export default {
           // for now easy and medium are sorted correctly alphbetically.
           key: "difficulty",
           sortable: true,
-          formatter: difficulty => {
-            return this.capitalize(difficulty)
-          }
+          formatter: (difficulty) => {
+            return this.capitalize(difficulty);
+          },
         },
         // TODO: add back in after adding filters
         // ensure works on mobile, possibly only desktop?
@@ -56,7 +56,7 @@ export default {
         // },
         {
           key: "flavours",
-          formatter: flavours => {
+          formatter: (flavours) => {
             return flavours.map(this.capitalize).join(", ");
           },
         },

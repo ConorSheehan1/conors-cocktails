@@ -48,4 +48,4 @@ Absolute Vanilla
 ### Grenadine
 
 Bols Grenadine  
-![bols grenadine](/images/ingredients/bols-grenadine.jpg)  
+![bols grenadine](/images/ingredients/bols-grenadine.jpg)

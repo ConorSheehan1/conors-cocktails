@@ -47,10 +47,10 @@ export default ({ Vue, options, router, siteData }) => {
         return `/images/${name}/${name}.jpg`;
       },
       capitalize(value) {
-        if (!value) return ''
-        value = value.toString()
-        return value.charAt(0).toUpperCase() + value.slice(1)
-      }
+        if (!value) return "";
+        value = value.toString();
+        return value.charAt(0).toUpperCase() + value.slice(1);
+      },
     },
   });
 };
