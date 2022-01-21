@@ -20,3 +20,15 @@ $ yarn lint
 # autofix linting errors
 $ yarn lintfix
 ```
+
+### Versioning
+```bash
+# set version prefix
+yarn config set version-tag-prefix "v"
+
+# set version explicitly
+yarn version --new-version <version>
+
+# bump minor version
+yarn version --minor
+```
