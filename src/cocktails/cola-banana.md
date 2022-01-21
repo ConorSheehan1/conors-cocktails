@@ -5,7 +5,7 @@ date: 2022-01-04
 
 ingredients:
   - name: cola
-    amount: 6
+    amount: 5
     unit: parts
   - name: banana liquer
     amount: 1
@@ -34,4 +34,4 @@ difficulty: easy
 ### Notes
 
 - That's really it. Can't go wrong, tweak to your taste!
-- No relation to coco cabana.
+- No relation to [coco cabana](/cocktails/coco-cabana).
