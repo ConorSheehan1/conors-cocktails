@@ -16,6 +16,7 @@ actionLink: /cocktails/
 # footer: Built with [vuepress](https://vuepress.vuejs.org/)
 ---
 <!-- <b-button>test</b-button> -->
+<!-- TODO: responsive layout, move recipes link to side on desktop -->
 
 <cocktails-carousel/>
 <vuepress-footer/>

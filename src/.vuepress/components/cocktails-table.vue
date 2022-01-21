@@ -22,6 +22,7 @@
 // TODO: fix mobile table
 // vue-component-media-queries?
 // completely different layout for mobile, split across 2+ rows and show iamges
+// switch to alternate table? https://codepen.io/erinesullivan/pen/JvoBvq
 export default {
   data() {
     return {
@@ -37,8 +38,13 @@ export default {
           sortable: true,
         },
         {
+          // TODO: custom sort once hard difficulty is added.
+          // for now easy and medium are sorted correctly alphbetically.
           key: "difficulty",
           sortable: true,
+          formatter: difficulty => {
+            return this.capitalize(difficulty)
+          }
         },
         // TODO: add back in after adding filters
         // ensure works on mobile, possibly only desktop?
@@ -50,8 +56,8 @@ export default {
         // },
         {
           key: "flavours",
-          formatter(flavours) {
-            return flavours.join(", ");
+          formatter: flavours => {
+            return flavours.map(this.capitalize).join(", ");
           },
         },
       ],
@@ -88,6 +94,13 @@ export default {
 img
   margin auto
 
+@media screen and (max-width: 600px)
+  img
+    padding: 0
+    margin: 0
+    border-radius 4px
+    min-width 80px
+
 ::v-deep table
-  border-radius 8px !important
+  border-radius 8px
 </style>

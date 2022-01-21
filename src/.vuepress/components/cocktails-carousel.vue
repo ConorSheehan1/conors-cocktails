@@ -29,21 +29,17 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-$max-height = 700px
-$max-width = 700px
+$max-height = 600px
+$max-width = 500px
 #cocktail-carousel
   max-height $max-height
   max-width $max-width
   border-radius 8px
   margin auto
 
-// TODO: fix desktop images
-// @media (min-width: 500px)
-//   ::v-deep img
-//     height 80vh !important
-
 ::v-deep
   img
+    max-height $max-height
     border none
     border-radius 0
     padding 0
