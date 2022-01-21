@@ -5,8 +5,6 @@
     controls
     indicators
     background="#ddd"
-    img-width="500"
-    img-height="400"
     style="text-shadow: 1px 1px 2px #333"
   >
     <b-carousel-slide
@@ -31,12 +29,13 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-$max-height = 550px
-$max-width = 1000px
+$max-height = 700px
+$max-width = 700px
 #cocktail-carousel
   max-height $max-height
   max-width $max-width
   border-radius 8px
+  margin auto
 
 // TODO: fix desktop images
 // @media (min-width: 500px)

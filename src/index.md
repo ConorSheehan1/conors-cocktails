@@ -15,6 +15,7 @@ actionLink: /cocktails/
 # https://github.com/vuejs/vuepress/issues/859
 # footer: Built with [vuepress](https://vuepress.vuejs.org/)
 ---
+<!-- <b-button>test</b-button> -->
 
 <cocktails-carousel/>
 <vuepress-footer/>

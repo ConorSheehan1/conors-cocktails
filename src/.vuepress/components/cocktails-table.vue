@@ -40,12 +40,14 @@ export default {
           key: "difficulty",
           sortable: true,
         },
-        {
-          key: "ingredients",
-          formatter(ingredients) {
-            return ingredients.map((v) => v.name).join(", ");
-          },
-        },
+        // TODO: add back in after adding filters
+        // ensure works on mobile, possibly only desktop?
+        // {
+        //   key: "ingredients",
+        //   formatter(ingredients) {
+        //     return ingredients.map((v) => v.name).join(", ");
+        //   },
+        // },
         {
           key: "flavours",
           formatter(flavours) {
