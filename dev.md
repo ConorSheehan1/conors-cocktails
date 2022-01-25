@@ -32,3 +32,12 @@ yarn version --new-version <version>
 # bump minor version
 yarn version --minor
 ```
+
+### Security
+```bash
+# find issues in dependencies
+yarn audit 
+
+# update dependencies
+yarn upgrade
+```
