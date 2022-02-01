@@ -49,4 +49,4 @@ difficulty: medium
 - A coffee with lots of crema is best to get a frothy top. Regular instant coffee works ok though. The maple syrup will help with the froth. Adding a few teaspoons of sugar to the coffee while brewing can help too.
 - Once the coffee has brewed, add some ice cubes to speed up the cooling.
 - You can add ice to the shaker as well, but make sure you strain them out so you get all the foam.
-- Espresso martinis are often served with coffee bean garnishes, but I prefer coco powder on top!
+- Espresso martinis are often served with coffee bean garnishes, but I prefer to sieve coco powder on top!

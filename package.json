@@ -17,7 +17,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "yarn-audit-fix": "^9.0.10"
   },
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.5",

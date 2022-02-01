@@ -41,6 +41,7 @@ difficulty: medium
 ## Recipe
 
 1. Add malibu, melon liquer, banana liquer and 7up to a glass.
+1. Add ice.
 1. Add a dash of orange juice.
 1. Finally add a dash of grenadine.
 
