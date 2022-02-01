@@ -42,10 +42,6 @@ describe('cocktail-ingredients.vue', () => {
     })
   })
   describe('the shotSize computed', () => {
-    // it('has allIngredients', () => {
-    //   // this test is pointless, just testing stubbed data
-    //   expect(wrapper.vm.allIngredients).toEqual(['test'])
-    // })
     it('returns 1 by default', () => {
       expect(wrapper.vm.shotSize).toEqual(1)
     })
@@ -85,7 +81,7 @@ describe('cocktail-ingredients.vue', () => {
     })
     it('returns scaled oz formatted ingredients', () => {
       wrapper.vm.$page.frontmatter.shotSize = 1.5
-      wrapper.setData({ selectedFormat: 'ml' })
+      wrapper.setData({ selectedFormat: 'oz' })
       expect(wrapper.vm.formattedIngredients).toEqual([{
         name: 'test',
         amount: 1.5,
