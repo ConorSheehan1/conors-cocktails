@@ -37,7 +37,7 @@ export default {
     },
     // TODO: test for this, broke when added emoji to title
     allIngredients() {
-      // ingredients listed on the ingredients page
+      // ingredients listed on the ingredients page#
       return this.$site.pages.find((v) => v.path === "/ingredients/")
         .frontmatter.allIngredients;
     },

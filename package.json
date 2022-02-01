@@ -2,30 +2,35 @@
   "name": "conors-cocktails",
   "version": "0.2.0",
   "description": "",
-  "main": "index.js",
-  "authors": {
-    "name": "Conor Sheehan",
-    "email": "conor.sheehan.dev@gmail.com"
-  },
-  "repository": "https://github.com/ConorSheehan1/conors-cocktails",
   "scripts": {
-    "dev": "vuepress dev src",
     "build": "vuepress build src",
-    "lint:prettier": "prettier --check .",
+    "test:unit": "vue-cli-service test:unit",
     "lint": "yarn lint:prettier",
+    "dev": "vuepress dev src",
+    "lint:prettier": "prettier --check .",
     "lintfix": "prettier --write --list-different ."
   },
-  "license": "MIT",
-  "devDependencies": {
-    "lodash": "^4.17.21",
-    "prettier": "^2.5.1",
-    "yarn-audit-fix": "^9.0.10"
-  },
+  "main": "index.js",
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.5",
     "bootstrap": "^5.1.3",
     "bootstrap-vue": "^2.21.2",
     "vuepress": "^1.5.3",
     "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
-  }
+  },
+  "devDependencies": {
+    "@vue/cli": "^4.5.15",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-service": "^4.5.15",
+    "@vue/test-utils": "^1.3.0",
+    "jest": "^27.4.7",
+    "lodash": "^4.17.21",
+    "prettier": "^2.5.1"
+  },
+  "authors": {
+    "name": "Conor Sheehan",
+    "email": "conor.sheehan.dev@gmail.com"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/ConorSheehan1/conors-cocktails"
 }
