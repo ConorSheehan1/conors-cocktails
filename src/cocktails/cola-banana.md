@@ -16,6 +16,8 @@ flavours:
   - banana
 
 difficulty: easy
+
+shotSize: 1.5
 ---
 
 # Cola Banana

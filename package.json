@@ -17,6 +17,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "lodash": "^4.17.21",
     "prettier": "^2.5.1",
     "yarn-audit-fix": "^9.0.10"
   },

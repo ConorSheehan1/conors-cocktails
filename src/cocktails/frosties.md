@@ -16,6 +16,8 @@ flavours:
   - citrus
 
 difficulty: easy
+
+shotSize: 1.5
 ---
 
 # Frosties

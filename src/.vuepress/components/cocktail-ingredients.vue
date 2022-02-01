@@ -20,6 +20,7 @@
 </template>
 
 <script>
+import { get, round } from "lodash";
 // TODO: switch from select to b-button-group? show all options in advance
 // requires ingredients in frontmatter
 export default {
@@ -50,6 +51,9 @@ export default {
         }
       }, 0);
     },
+    shotSize() {
+      return get(this.$page.frontmatter, 'shotSize', 1)
+    }
   },
   methods: {
     ingredientLink({ name }) {
@@ -71,9 +75,10 @@ export default {
 
       return {
         ...ingredient,
-        amount: Math.round(ingredient.amount * 45),
+        amount: round(ingredient.amount * (30 * this.shotSize), 2),
         unit: "ml",
         // 1 jigger -> millileters 44.3603
+        // regular shot size 30ml, large 1.5 -> 45ml
       };
     },
     ozFormat(ingredient) {
@@ -81,9 +86,10 @@ export default {
 
       return {
         ...ingredient,
-        amount: Math.round(ingredient.amount * 1.6),
+        amount: round(ingredient.amount * this.shotSize, 2),
         unit: "oz",
         // 1 jigger -> fliud ounces 1.56126
+        // regular shot size 1oz, large 1.5 -> 1,5oz
       };
     },
   },

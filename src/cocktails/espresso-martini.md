@@ -22,6 +22,8 @@ flavours:
   - vanilla
 
 difficulty: medium
+
+shotSize: 1.5
 ---
 
 # Espresso Martini
@@ -46,6 +48,7 @@ difficulty: medium
 
 ### Notes
 
+- Generally a cup of coffee, 1 shot of vodka, and 2 shots of kahlua servers 2.
 - A coffee with lots of crema is best to get a frothy top. Regular instant coffee works ok though. The maple syrup will help with the froth. Adding a few teaspoons of sugar to the coffee while brewing can help too.
 - Once the coffee has brewed, add some ice cubes to speed up the cooling.
 - You can add ice to the shaker as well, but make sure you strain them out so you get all the foam.
