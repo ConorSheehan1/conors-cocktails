@@ -11,6 +11,13 @@ $ yarn dev
 $ yarn build
 ```
 
+### Testing
+
+```bash
+$ yarn test:unit
+# TODO: setup e2e tests, run all tests together
+```
+
 ### Linting
 
 ```bash
@@ -22,6 +29,7 @@ $ yarn lintfix
 ```
 
 ### Versioning
+
 ```bash
 # set version prefix
 yarn config set version-tag-prefix "v"
@@ -34,9 +42,10 @@ yarn version --minor
 ```
 
 ### Security
+
 ```bash
 # find issues in dependencies
-yarn audit 
+yarn audit
 
 # update dependencies
 yarn upgrade

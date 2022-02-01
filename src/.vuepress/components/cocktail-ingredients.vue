@@ -52,8 +52,8 @@ export default {
       }, 0);
     },
     shotSize() {
-      return get(this.$page.frontmatter, 'shotSize', 1)
-    }
+      return get(this.$page.frontmatter, "shotSize", 1);
+    },
   },
   methods: {
     ingredientLink({ name }) {
