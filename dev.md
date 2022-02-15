@@ -50,3 +50,14 @@ yarn audit
 # update dependencies
 yarn upgrade
 ```
+
+### Adding a cockail
+add the following files
+1. src/cocktails/$name.md
+2. src/.vuepress/public/images/$name
+
+### Adding ingredients
+1. add jpg to src/.vuepress/ingredients/name
+2. add entry into src/ingredients/README.md
+    1. ensure there are 2 spaces after image and links
+    2. ensure ingredient is added to frontmatter at top

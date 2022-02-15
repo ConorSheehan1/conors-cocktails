@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     ingredientLink({ name }) {
-      return `/ingredients#${name.replace(" ", "-")}`;
+      return `/ingredients/#${name.replace(/ /g, "-")}`;
     },
     hasIngredientLink({ name }) {
       return this.allIngredients.includes(name);

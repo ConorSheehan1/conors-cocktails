@@ -1,10 +1,13 @@
 ---
 allIngredients:
   - banana liquer
+  - bubblegum syrup
+  - elderflower tonic water
   - grenadine
   - kahlua
   - malibu
   - melon liquer
+  - red lemonade
   - vanilla vodka
 ---
 
@@ -45,7 +48,25 @@ Absolute Vanilla
 
 ## Non Alcoholic
 
+### Bubblegum syrup
+
+Monin bubblegum syrup  
+![bubblegum syrup](/images/ingredients/monin-bubblegum-syrup.jpg)  
+[https://www.monin.com/emea/monin-bubble-gum-syrup.html](https://www.monin.com/emea/monin-bubble-gum-syrup.html)
+
+### Elderflower Tonic Water
+
+FeverTree elderflower tonic water  
+![elderflower tonic water](/images/ingredients/fevertree-elderflower-tonic-water.jpg)  
+[https://fever-tree.com/en_GB/products/elderflower-tonic-water](https://fever-tree.com/en_GB/products/elderflower-tonic-water)
+
 ### Grenadine
 
 Bols Grenadine  
 ![bols grenadine](/images/ingredients/bols-grenadine.jpg)
+
+
+### Red lemonade
+
+TK Red Lemonade  
+![red lemonade](/images/ingredients/tk-red-lemonade.jpg)
