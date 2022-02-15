@@ -65,7 +65,6 @@ FeverTree elderflower tonic water
 Bols Grenadine  
 ![bols grenadine](/images/ingredients/bols-grenadine.jpg)
 
-
 ### Red lemonade
 
 TK Red Lemonade  

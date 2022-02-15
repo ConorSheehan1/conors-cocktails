@@ -38,8 +38,9 @@ shotSize: 1
 3. Strain into martini glass.
 
 ## Notes
+
 ### Rim
+
 1. Rub lemon or lime juice onto the edge of the glasses.
 2. Add sugar to a wide bowl.
 3. Dip the glasses in the bowl and twist so the sugar sticks to the citrus juice.
-
