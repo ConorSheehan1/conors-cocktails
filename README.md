@@ -5,6 +5,8 @@
 
 A collection of cocktail recipes built with [vuepress](https://vuepress.vuejs.org/).
 
+![website-example](.github/images/website.png)
+
 ### Development
 
 See [dev.md](./dev.md)
