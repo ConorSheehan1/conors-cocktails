@@ -2,6 +2,7 @@
 
 ```bash
 # install dependencies
+$ npm install -g yarn
 $ yarn install
 
 # serve with hot reload at localhost:3000
